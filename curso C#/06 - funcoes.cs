@@ -12,8 +12,10 @@ namespace HelloWorld
         {
 
             ExibirMsg();
-            ExibirMsg();
-            ExibirMsg();
+            GerarPreco(60);
+            GerarPreco(-30);
+            GerarPreco(-20);
+
             Console.ReadLine();
         }
 
@@ -22,6 +24,13 @@ namespace HelloWorld
             Console.WriteLine("Bem vindo!");
             Console.WriteLine("Utilizando funções");
 
+        }
+
+        static void GerarPreco(int preco)
+        {
+            int precoAbs = Math.Abs(preco);
+            int valorFinal = precoAbs + (2 * precoAbs);
+            Console.WriteLine("Valor final: " + valorFinal);
         }
     }
 }
