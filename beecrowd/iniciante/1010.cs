@@ -17,6 +17,7 @@ class URI {
 
     static Tuple<int,int,double> leitura(string line)
     {
+        //transformar isto em uma classe
         var arguments = line.Split(' ');
         int cod = int.Parse(arguments[0]);
         int qnt = int.Parse(arguments[1]);
