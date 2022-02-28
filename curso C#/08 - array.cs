@@ -10,34 +10,20 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
+            //não pode mudar o tamanho do array
+            string[] produtos = new string[5]{
+                "Sea of thieves", // 0
+                "Lost ark", // 1
+                "Path of Exile", // 2
+                "Half-life", // 3
+                "Portal" // 4
+            };
 
-            int soma1 = Somar(1, 2, 3);
-            int soma2 = Somar(10, 20, 30);
+            int[] valores = {40, 50, 60, 70, 20};
 
-            Console.WriteLine(soma1);
-            Console.WriteLine(soma2);
+            Console.WriteLine(produtos[0]);
 
             Console.ReadLine();
-        }
-
-        static void ExibirMsg()
-        {
-            Console.WriteLine("Bem vindo!");
-            Console.WriteLine("Utilizando funções");
-
-        }
-
-        static void GerarPreco(int preco)
-        {
-            int precoAbs = Math.Abs(preco);
-            int valorFinal = precoAbs + (2 * precoAbs);
-            Console.WriteLine("Valor final: " + valorFinal);
-        }
-
-        static int Somar(int a , int b, int c)
-        {
-            int resultadoFinal = a + b + c;
-            return resultadoFinal;
         }
     }
 }
