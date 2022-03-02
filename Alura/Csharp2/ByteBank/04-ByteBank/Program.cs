@@ -23,9 +23,19 @@ namespace _03_ByteBank
             bool resultadoSaque = conta.Sacar(50);
             Console.WriteLine(conta.saldo);
 
+            conta.Depositar(500);
+            Console.WriteLine(conta.saldo);
+
+            ContaCorrente conta1 = new ContaCorrente();
+            conta1.titular = "titular";
+
+            bool resultadoTrans = conta.Transferir(200, conta1 );
+
+            Console.WriteLine("saldo conta : " + conta.saldo);
+            Console.WriteLine("saldo conta 1: "+ conta1.saldo);
+            Console.WriteLine(resultadoTrans);
+
             Console.ReadLine();
         }
     }
 }
-
-//parei no metodo sem retorno.
